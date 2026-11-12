@@ -507,10 +507,10 @@ def parse_projects_from_file(filepath: str | Path) -> list[ProjectData]:
     each starting with a depth=0 row (Ancestors=0 or Level=0) followed by
     its child tasks at deeper levels.
 
-    Example — S2P Project.xlsx yields 3 ProjectData objects:
-        1. Zycus - Titan S2P Implementation  (depth=0)
-        2. Phase 1 - S2C                     (depth=0)
-        3. Phase 2 - P2P                     (depth=0)
+    Example — a workbook with three stacked depth=0 rows yields 3 ProjectData objects:
+        1. Project A - Implementation  (depth=0)
+        2. Project B - Phase 1         (depth=0)
+        3. Project C - Phase 2         (depth=0)
 
     All three share the same Summary and Comments sheets, but each gets
     its own task slice, its own scores, and its own report.

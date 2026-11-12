@@ -1,0 +1,658 @@
+{
+  "project_name": "Harbor Foods - Procure-to-Pay Rollout",
+  "project_manager": "Priya Nair",
+  "project_stage": "Integration and Testing",
+  "source_file": "Harbor_Foods_P2P.xlsx",
+  "as_of": "2026-07-02",
+  "run_timestamp": "2026-11-12T06:05:18",
+  "overall_score": 78.5,
+  "overall_rag": "Amber",
+  "confidence": 77,
+  "confidence_note": "Budget data not available in source file (-15%); Schedule variance field unparseable (-8%)",
+  "ignored_metrics": [
+    "Budget burn rate",
+    "Summary-level schedule delta"
+  ],
+  "pct_complete": 40.7,
+  "pct_time_elapsed": 72.5,
+  "pace_gap": -31.8,
+  "phases": [
+    {
+      "name": "Discovery & Design",
+      "score": 90.8,
+      "rag": "Green",
+      "pct_complete": 100.0,
+      "is_on_hold": false,
+      "is_at_risk": false,
+      "reason_codes": [
+        "3_overdue_children"
+      ],
+      "task_count": 3,
+      "red_tasks": 0,
+      "amber_tasks": 0,
+      "green_tasks": 3,
+      "tasks": [
+        {
+          "name": "Kick-off and governance setup",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 100.0,
+          "rag": "Green",
+          "pct_complete": 100.0,
+          "overdue_days": 142,
+          "schedule_health": "Green",
+          "milestone_health": "Completed",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": false,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "overdue_142d"
+          ],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 100.0,
+            "progress": 100.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-02-02T00:00:00",
+          "end_date": "2026-02-10T00:00:00"
+        },
+        {
+          "name": "Requirements workshops",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 95.6,
+          "rag": "Green",
+          "pct_complete": 100.0,
+          "overdue_days": 110,
+          "schedule_health": "Green",
+          "milestone_health": "Completed",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": true,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "critical_overdue_110d",
+            "overdue_110d"
+          ],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 100.0,
+            "progress": 100.0,
+            "blockers": 60.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-02-12T00:00:00",
+          "end_date": "2026-03-14T00:00:00"
+        },
+        {
+          "name": "Solution design sign-off",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 80.0,
+          "rag": "Green",
+          "pct_complete": 100.0,
+          "overdue_days": 92,
+          "schedule_health": "Yellow",
+          "milestone_health": "Completed",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": true,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "critical_overdue_92d",
+            "overdue_92d"
+          ],
+          "indicator_scores": {
+            "schedule": 60.0,
+            "milestone": 100.0,
+            "progress": 100.0,
+            "blockers": 60.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-03-16T00:00:00",
+          "end_date": "2026-04-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "name": "Configuration & Build",
+      "score": 46.8,
+      "rag": "Red",
+      "pct_complete": 56.0,
+      "is_on_hold": false,
+      "is_at_risk": true,
+      "reason_codes": [
+        "4_red_children",
+        "5_overdue_children"
+      ],
+      "task_count": 5,
+      "red_tasks": 4,
+      "amber_tasks": 0,
+      "green_tasks": 1,
+      "tasks": [
+        {
+          "name": "Supplier master data load",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 80.6,
+          "rag": "Green",
+          "pct_complete": 100.0,
+          "overdue_days": 60,
+          "schedule_health": "Green",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": false,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "overdue_60d"
+          ],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 30.0,
+            "progress": 100.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-04-03T00:00:00",
+          "end_date": "2026-05-03T00:00:00"
+        },
+        {
+          "name": "Approval workflow configuration",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 40.0,
+          "rag": "Red",
+          "pct_complete": 85.0,
+          "overdue_days": 5,
+          "schedule_health": "Red",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": true,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "critical_overdue_5d",
+            "overdue_5d"
+          ],
+          "indicator_scores": {
+            "schedule": 20.0,
+            "milestone": 30.0,
+            "progress": 77.5,
+            "blockers": 60.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-04-23T00:00:00",
+          "end_date": "2026-06-27T00:00:00"
+        },
+        {
+          "name": "Catalog and punch-out setup",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 50.0,
+          "rag": "Red",
+          "pct_complete": 55.0,
+          "overdue_days": 2,
+          "schedule_health": "Yellow",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": false,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "overdue_2d"
+          ],
+          "indicator_scores": {
+            "schedule": 60.0,
+            "milestone": 30.0,
+            "progress": 32.5,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-05-13T00:00:00",
+          "end_date": "2026-06-30T00:00:00"
+        },
+        {
+          "name": "Invoice matching rules",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 23.9,
+          "rag": "Red",
+          "pct_complete": 40.0,
+          "overdue_days": 1,
+          "schedule_health": "Red",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": true,
+          "is_critical": false,
+          "has_owner": false,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "at_risk",
+            "no_owner",
+            "overdue_1d"
+          ],
+          "indicator_scores": {
+            "schedule": 20.0,
+            "milestone": 30.0,
+            "progress": 10.0,
+            "blockers": 50.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-05-23T00:00:00",
+          "end_date": "2026-07-01T00:00:00"
+        },
+        {
+          "name": "Purchase order templates",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 42.8,
+          "rag": "Red",
+          "pct_complete": 0.0,
+          "overdue_days": 1,
+          "schedule_health": "Yellow",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": false,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "overdue_1d",
+            "late_to_start_14d"
+          ],
+          "indicator_scores": {
+            "schedule": 60.0,
+            "milestone": 30.0,
+            "progress": 0.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-06-18T00:00:00",
+          "end_date": "2026-07-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "name": "Integration & Testing",
+      "score": 71.2,
+      "rag": "Amber",
+      "pct_complete": 10.0,
+      "is_on_hold": false,
+      "is_at_risk": false,
+      "reason_codes": [
+        "1_red_children"
+      ],
+      "task_count": 3,
+      "red_tasks": 1,
+      "amber_tasks": 1,
+      "green_tasks": 1,
+      "tasks": [
+        {
+          "name": "ERP integration build",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 51.2,
+          "rag": "Red",
+          "pct_complete": 30.0,
+          "overdue_days": null,
+          "schedule_health": "Red",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": true,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [],
+          "indicator_scores": {
+            "schedule": 20.0,
+            "milestone": 70.0,
+            "progress": 57.8,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-06-07T00:00:00",
+          "end_date": "2026-07-20T00:00:00"
+        },
+        {
+          "name": "Integration test cycle 1",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 73.9,
+          "rag": "Amber",
+          "pct_complete": 0.0,
+          "overdue_days": null,
+          "schedule_health": "Yellow",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": false,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [],
+          "indicator_scores": {
+            "schedule": 60.0,
+            "milestone": 70.0,
+            "progress": 90.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-07-12T00:00:00",
+          "end_date": "2026-08-01T00:00:00"
+        },
+        {
+          "name": "User acceptance testing",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 89.4,
+          "rag": "Green",
+          "pct_complete": 0.0,
+          "overdue_days": null,
+          "schedule_health": "Green",
+          "milestone_health": "In Progress",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": true,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 70.0,
+            "progress": 90.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-08-03T00:00:00",
+          "end_date": "2026-08-23T00:00:00"
+        }
+      ]
+    },
+    {
+      "name": "Training & Cutover",
+      "score": 91.3,
+      "rag": "Green",
+      "pct_complete": 0.0,
+      "is_on_hold": false,
+      "is_at_risk": false,
+      "reason_codes": [],
+      "task_count": 2,
+      "red_tasks": 0,
+      "amber_tasks": 0,
+      "green_tasks": 2,
+      "tasks": [
+        {
+          "name": "Training material preparation",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 90.0,
+          "rag": "Green",
+          "pct_complete": 0.0,
+          "overdue_days": null,
+          "schedule_health": "Green",
+          "milestone_health": "Not Started",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": false,
+          "has_owner": false,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [
+            "no_owner"
+          ],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 80.0,
+            "progress": 90.0,
+            "blockers": 80.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-07-27T00:00:00",
+          "end_date": "2026-08-21T00:00:00"
+        },
+        {
+          "name": "Cutover rehearsal",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 92.2,
+          "rag": "Green",
+          "pct_complete": 0.0,
+          "overdue_days": null,
+          "schedule_health": "Green",
+          "milestone_health": "Not Started",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": true,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 80.0,
+            "progress": 90.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-08-26T00:00:00",
+          "end_date": "2026-09-05T00:00:00"
+        }
+      ]
+    },
+    {
+      "name": "Go-live & Hypercare",
+      "score": 92.2,
+      "rag": "Green",
+      "pct_complete": 0.0,
+      "is_on_hold": false,
+      "is_at_risk": false,
+      "reason_codes": [],
+      "task_count": 2,
+      "red_tasks": 0,
+      "amber_tasks": 0,
+      "green_tasks": 2,
+      "tasks": [
+        {
+          "name": "Go-live",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 92.2,
+          "rag": "Green",
+          "pct_complete": 0.0,
+          "overdue_days": null,
+          "schedule_health": "Green",
+          "milestone_health": "Not Started",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": true,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 80.0,
+            "progress": 90.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-08-28T00:00:00",
+          "end_date": "2026-08-28T00:00:00"
+        },
+        {
+          "name": "Hypercare support",
+          "level": 2,
+          "node_type": "leaf",
+          "score": 92.2,
+          "rag": "Green",
+          "pct_complete": 0.0,
+          "overdue_days": null,
+          "schedule_health": "Green",
+          "milestone_health": "Not Started",
+          "is_on_hold": false,
+          "is_at_risk": false,
+          "is_critical": false,
+          "has_owner": true,
+          "sentiment_available": false,
+          "sentiment_label": null,
+          "reason_codes": [],
+          "indicator_scores": {
+            "schedule": 100.0,
+            "milestone": 80.0,
+            "progress": 90.0,
+            "blockers": 100.0,
+            "sentiment": null
+          },
+          "indicator_weights": {
+            "schedule": 0.3889,
+            "milestone": 0.2778,
+            "progress": 0.2222,
+            "blockers": 0.1111
+          },
+          "ambiguity_flags": [],
+          "start_date": "2026-08-29T00:00:00",
+          "end_date": "2026-09-25T00:00:00"
+        }
+      ]
+    }
+  ],
+  "narrative": "Harbor Foods - Procure-to-Pay Rollout has an overall health score of 78.5/100 (Amber). Of 5 phases assessed, 1 are Red and 1 are Amber. Run with LLM enabled for a detailed narrative and recommendations.",
+  "recommendations": [
+    {
+      "risk": "Configuration & Build is Red (46.8/100)",
+      "action": "PM to review Configuration & Build and escalate blockers.",
+      "priority": "High",
+      "linked_phase": "Configuration & Build"
+    },
+    {
+      "risk": "Integration & Testing is Amber (71.2/100)",
+      "action": "PM to review Integration & Testing and escalate blockers.",
+      "priority": "Medium",
+      "linked_phase": "Integration & Testing"
+    }
+  ],
+  "llm_available": false,
+  "ambiguities": [],
+  "total_tasks": 15,
+  "red_tasks": 5,
+  "amber_tasks": 1,
+  "green_tasks": 9
+}

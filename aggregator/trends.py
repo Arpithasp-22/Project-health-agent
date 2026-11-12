@@ -202,8 +202,13 @@ def compute_trends(weekly_dir: Path) -> TrendSummary:
                 emerging_risks.extend(r.get("observed_facts", [])[:2])
 
     # ── Portfolio trajectory ──
-    all_scores = [s for pt in project_trends for s in pt.score_history]
-    portfolio_trajectory = _compute_trajectory(all_scores)
+    # Average the score of every project per week, then compare weeks. (Flattening
+    # per-project histories would compare one project against another.)
+    weekly_scores: dict[str, list[float]] = defaultdict(list)
+    for r in reports:
+        weekly_scores[r.get("as_of", "")].append(r.get("overall_score", 0))
+    weekly_avg = [sum(v) / len(v) for _, v in sorted(weekly_scores.items())]
+    portfolio_trajectory = _compute_trajectory(weekly_avg)
 
     # ── Weekly snapshots (for chart data in presentation) ──
     all_weeks = sorted(set(r.get("as_of", "") for r in reports))
