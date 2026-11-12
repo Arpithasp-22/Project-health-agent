@@ -56,3 +56,8 @@ tmp/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local run data (contains your own project info)
+data/
+outputs/
+*.db

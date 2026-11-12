@@ -262,7 +262,7 @@ def _slide_cover(prs: Presentation, trends: TrendSummary, synthesis: ExecutiveSy
 
     _add_textbox(slide, 0.6, 3.1, 8.8, 0.6,
                  trends.report_month, font_size=22,
-                 color=COLORS["accent"], align=PP_ALIGN.LEFT)
+                 color=COLORS["light"], align=PP_ALIGN.LEFT)
 
     _add_textbox(slide, 0.6, 3.9, 8.8, 0.8,
                  synthesis.portfolio_headline, font_size=14,
@@ -445,12 +445,12 @@ def _slide_appendix(prs: Presentation, trends: TrendSummary):
                  color=COLORS["white"])
 
     _add_textbox(slide, 0.4, 1.0, 9.2, 0.35,
-                 "Latest dimension scores per project",
+                 "Latest score, trend and pace per project",
                  font_size=11, color=COLORS["grey"])
 
-    col_headers = ["Project", "Overall", "Score", "Schedule", "Execution", "Milestones", "Blockers", "Confidence"]
-    col_x       = [0.3, 2.5, 3.4, 4.3, 5.4, 6.4, 7.4, 8.4]
-    col_w       = [2.0, 0.8, 0.8, 0.9, 0.9, 0.9, 0.9, 0.9]
+    col_headers = ["Project", "Overall", "Score", "Trend", "Pace gap", "Stage", "Confidence"]
+    col_x       = [0.3, 2.9, 3.7, 4.4, 5.6, 6.5, 8.7]
+    col_w       = [2.6, 0.8, 0.7, 1.2, 0.9, 2.2, 0.9]
     row_h       = 0.5
 
     # Header row
@@ -468,10 +468,12 @@ def _slide_appendix(prs: Presentation, trends: TrendSummary):
 
         rag_c = _RAG_COLOR.get(pt.latest_rag, COLORS["grey"])
         vals = [
-            pt.project_name[:28],
+            pt.project_name[:34],
             pt.latest_rag,
             f"{pt.latest_score}",
-            "—", "—", "—", "—",
+            pt.trajectory,
+            f"{pt.pace_gap_history[-1]:+.0f}%" if pt.pace_gap_history else "—",
+            (pt.latest_stage or "—")[:26],
             f"{pt.confidence_history[-1] if pt.confidence_history else '—'}%",
         ]
         for j, val in enumerate(vals):
